@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel='stylesheet' href='./css/all.min.css' />
+  <link rel='stylesheet' href='./css/bootstrap.min.css' />
+  <link rel="stylesheet" href="./style/HomePage.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <!-- --------------------------------------------- Nav ----------------------------------------------------------- -->
+<nav></nav>
+  <!-- --------------------------------------------- Nav ----------------------------------------------------------- -->
+  <div class='all'>
+    <!-- --------------------------------------------- aside ----------------------------------------------------------- -->
+    <div class="aside-bar d-none d-lg-block">
+      <div class="aside-bar-container">
+        <div class="card text-center">
+          <img src="profilePics/page2.jpg" class="profile-img card-img-top" alt="..."
+            style="max-width: 100px; max-height: 100px;">
+          <div class="card-body">
+            <h5 class="card-title">Harry Potter</h5>
+            <a href="#" class="btn btn-primary">View Your Profile</a>
+          </div>
+        </div>
+
+        <div class="card text-center mt-4">
+          <ul class="list-group list-group-flush card-list">
+            <li class="list-group-item"><a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
+            <li class="list-group-item">
+              <a href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
+              <span id='notification'> 3</span>
+            </li>
+            <li class="list-group-item"><a href="#"><i class="fas fa-bookmark"></i> Saved Posts</a></li>
+            <li class="list-group-item"><a href="#"><i class="far fa-compass"></i> Explore</a></li>
+            <li class="list-group-item"><a href="#"><i class="fas fa-users"></i> My Friends</a></li>
+            <li class="list-group-item"><a href="#"><i class="fas fa-user-plus"></i> Friends
+                Requests</a> <span id='req'> 2</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------------------- middle ----------------------------------------------------------- -->
+    <main>
+      <!-- ---------------------------------------------- form ------------------------------------------------------------- -->
+      <div class>
+        <div class="card">
+          <div class="card-body">
+            <form id="postForm" action="#" method="post" enctype="multipart/form-data">
+              <div class="input-group mb-3">
+                <textarea class="form-control" id="postContent" name="post_content" placeholder="What's on your mind?"
+                  aria-label="Post content"></textarea>
+                <label class="input-group-text" for="fileInput"><i class="fas fa-upload"></i></label>
+                <input type="file" class="form-control-file d-none" id="fileInput" name="post_file"
+                  aria-describedby="fileInputAddon" accept="image/*, audio/*, video/*, .pdf, .doc, .docx">
+                <br>
+              </div>
+              <button type="submit" class="btn btn-primary"><i class="fas fa-share"></i> Post</button>
+              <span class='p-2' id="fileUploadFeedback"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------- POST ------------------------------------------------------------- -->
+      <div class="posts-container">
+      </div>
+      <!---------------------------------------- POST ------------------------------------------------------------- -->
+    </main>
+    <!-- --------------------------------------------- aside ----------------------------------------------------------- -->
+    <div class="aside-bar">
+      <div class="aside-bar-container">
+        <!-- Suggested Pages to Follow -->
+        <div class="suggested-pages">
+          <h5>Suggested Pages to Follow</h5>
+          <div class="pages-container">
+          </div>
+          <a href="#">View All</a>
+        </div>
+
+        <!-- People You May Know -->
+        <div class="people-you-may-know mt-4">
+          <h5>People You May Know</h5>
+          <div class="people-container">
+          </div>
+          <a href="#">View All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------------------- JS ------------------------------------------------- -->
+  <script src='./js/bootstrap.bundle.min.js'></script>
+  <script src='./js/navbar.js'></script>
+  <script src='./js/uploadPost.js'></script>
+  <script src='./js/posts.js'></script>
+  <script src='./js/postsOperations.js'></script>
+  <script src='./js/suggestedPeople&Pages.js'></script>
+  <script src='./js/follow&add.js'></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
