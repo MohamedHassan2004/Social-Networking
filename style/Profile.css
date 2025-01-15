@@ -1,0 +1,49 @@
+body {
+  background-color: #f9f9f9;
+}
+
+.avatar img{
+  width:7rem;
+  height:7rem;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.myProfileAvatar img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.myProfileAvatar:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+
+.userInfo{
+  border: 1px solid #a1a1a1;
+  border-radius: 10px;
+  padding: 3rem;
+  background-color: #f9f9f9;
+}
+
+
+/* *********************************** responsive ********************************************* */
+@media (max-width: 1100px) {
+  main {
+    width: 75%;
+    margin: auto;
+    margin-top:3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main{
+    width: 85%;
+  }
+}
+
+@media (max-width: 550px) {
+  main{
+    width: 100%;
+    padding:0.5rem;
+  }
+}

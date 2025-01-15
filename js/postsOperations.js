@@ -1,44 +1,33 @@
-// save post
-let allSave = document.querySelectorAll(".savePost");
-let saveArr = Array.from(allSave);
-saveArr.forEach(function (e) {
-    e.addEventListener("click", function (x) {
-        if (e.innerHTML.trim() == '<i class="far fa-bookmark"></i>'.trim()) {
-            e.innerHTML = '<i class="fa-solid fa-bookmark"></i>';
-            savePost(e.getAttribute("data-post-id"));
-        } else {
-            e.innerHTML = '<i class="far fa-bookmark"></i>';
-            unsavePost(e.getAttribute("data-post-id"));
-        }
-    });
-});
+document.querySelector(".posts-container").addEventListener("click", function (event) {
+    let target = event.target;
 
-// like post
-let allLike = document.querySelectorAll(".like");
-let likesArr = Array.from(allLike);
-likesArr.forEach(function (e) {
-    e.addEventListener("click", function (x) {
-        const postId = e.dataset.postId;
-        likeCount = e.closest(".post").querySelector(".like-count");
-        if (e.innerHTML.includes("far fa-thumbs-up")) {
-            let i = e.querySelector('i');
-            i.className = "fa-solid fa-thumbs-up";
-            likeCount.textContent++;
+    // Handle save post
+    if (target.classList.contains("savePost") || target.closest('.savePost')) {
+        const saveBtn = target.closest('.savePost');
+        if (saveBtn.querySelector('i').classList.contains("far")) {
+            saveBtn.querySelector('i').classList.replace("far", "fa");
         } else {
-            let i = e.querySelector('i');
-            i.className = "far fa-thumbs-up";
-            likeCount.textContent--;
+            saveBtn.querySelector('i').classList.replace("fa", "far");
         }
-    });
-});
+    }
 
-// delete post
-let deletePost = document.querySelectorAll(".delete-post");
-let deletePostArr = Array.from(deletePost);
-deletePostArr.forEach((e) => {
-    e.addEventListener("click", (x) => {
-        postId = e.dataset.postId;
-        e.closest(".post").remove();
-        deletePostMethod(postId);
-    });
+    // Handle like post
+    if (target.classList.contains("like") || target.closest('.like')) {
+        const likeBtn = target.closest('.like');
+        const likeIcon = likeBtn.querySelector('i');
+        const likeCount = likeBtn.querySelector('.like-count');
+        if (likeIcon.classList.contains("far")) {
+            likeIcon.classList.replace("far", "fa");
+            likeCount.textContent = parseInt(likeCount.textContent) + 1;
+        } else {
+            likeIcon.classList.replace("fa", "far");
+            likeCount.textContent = parseInt(likeCount.textContent) - 1;
+        }
+    }
+
+    // Handle delete post
+    if (target.classList.contains("delete-post") || target.closest('.delete-post')) {
+        const deleteBtn = target.closest('.delete-post');
+        deleteBtn.closest('.post').remove();
+    }
 });

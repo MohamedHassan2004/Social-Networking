@@ -1,0 +1,100 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "profileId": 1,
+            "username": "Harry Potter",
+            "profilePicPath": "profilePics/page2.jpg",
+            "time": "2 hours ago",
+            "content": "❤️🪄",
+            "media": "uploads/xu4g5hyyvlhzoorzjpq5.webp",
+            "likesCount": 5,
+            "commentCount": 3,
+            "liked": 0,
+            "saved": 0,
+            "canModify": 1
+        },
+        {
+            "id": 2,
+            "profileId": 2,
+            "username": "Tony Stark",
+            "profilePicPath": "profilePics/Tony-Stark.jpg",
+            "time": "5 hours ago",
+            "content": "I am Iron Man!",
+            "media": "uploads/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg",
+            "likesCount": 4,
+            "commentCount": 0,
+            "liked": 0,
+            "saved": 0,
+            "canModify": 1
+        },
+        {
+            "id": 3,
+            "profileId": 3,
+            "username": "Ronaldo",
+            "profilePicPath": "profilePics/cr7.jpg",
+            "time": "1 day ago",
+            "content": "",
+            "media": "uploads/alasan-mengapa-cristiano-ronaldo-dicoret-dari-timnas-portugal-analisis-mendalam.webp",
+            "likesCount": 10,
+            "commentCount": 5,
+            "liked": 1,
+            "saved": 1,
+            "canModify":0
+        },
+        {
+            "id": 4,
+            "profileId": 4,
+            "username": "Mohamed Hassan",
+            "profilePicPath": "profilePics/avatar.jpg",
+            "time": "1 week ago",
+            "content": "سورة الاخلاص",
+            "media": "uploads/الاخلاص.mp3",
+            "likesCount": 5,
+            "commentCount": 0,
+            "liked": 0,
+            "saved": 0,
+            "canModify":0
+        }
+    ],
+
+    "profiles" :[
+        {
+            "id": 1,
+            "username": "Harry Potter",
+            "img": "profilePics/page2.jpg",
+            "bio" : "🪄",
+            "mobile" : "0123456789",
+            "BOD" : "31 - 07 - 1980",
+            "gender" : "Male"
+        },
+        {
+            "id": 2,
+            "username": "Tony Stark",
+            "img": "profilePics/Tony-Stark.jpg",
+            "bio" : "Iron Man",
+            "mobile" : "0123456789",
+            "BOD" : "",
+            "gender" : "Male"
+        },
+        {
+            "id": 3,
+            "username": "Ronaldo",
+            "img": "profilePics/cr7.jpg",
+            "bio" : "CR7",
+            "mobile" : "0123456789",
+            "BOD" : "",
+            "gender" : "Male"
+        },
+        {
+            "id": 4,
+            "username": "Mohamed Hassan",
+            "img": "profilePics/avatar.jpg",
+            "bio" : "✌️",
+            "mobile" : "0123456789",
+            "BOD" : "22 - 09 - 2004",
+            "gender" : "Male"
+        }
+    ]
+
+}

@@ -63,7 +63,6 @@ main {
   right: 10%;
 }
 
-
 .profile-img {
   margin-top: 1rem;
   width: 12rem;
@@ -216,17 +215,31 @@ main {
     text-align: left;
   }
   main{
-    width: 95%;
+    width: 75%;
     margin:auto;
     margin-top:3.5rem;
   }
+  .edit-post, .delete-post{
+    font-size: 12px;
+    padding: 0.75rem;
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
+  main{
+    width: 85%;
+  }
+}
+
+@media (max-width: 550px) {
+  *{
+    font-size:12px;
+  }
   main{
     width: 100%;
   }
-  *{
-    font-size:12px;
+  .edit-post, .delete-post{
+    font-size: 11px;
+    padding: 0.5rem;
   }
 }

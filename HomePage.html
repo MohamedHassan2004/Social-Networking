@@ -7,12 +7,12 @@
   <link rel='stylesheet' href='./css/all.min.css' />
   <link rel='stylesheet' href='./css/bootstrap.min.css' />
   <link rel="stylesheet" href="./style/HomePage.css">
-  <title>Home</title>
+  <title>Socialify | Home</title>
 </head>
 
 <body>
   <!-- --------------------------------------------- Nav ----------------------------------------------------------- -->
-<nav></nav>
+  <nav></nav>
   <!-- --------------------------------------------- Nav ----------------------------------------------------------- -->
   <div class='all'>
     <!-- --------------------------------------------- aside ----------------------------------------------------------- -->
@@ -23,7 +23,7 @@
             style="max-width: 100px; max-height: 100px;">
           <div class="card-body">
             <h5 class="card-title">Harry Potter</h5>
-            <a href="#" class="btn btn-primary">View Your Profile</a>
+            <a href="profile.html?id=1" class="btn btn-primary">View Your Profile</a>
           </div>
         </div>
 
@@ -32,13 +32,15 @@
             <li class="list-group-item"><a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
             <li class="list-group-item">
               <a href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
-              <span id='notification'> 3</span>
+              <span id='notification'>3</span>
             </li>
             <li class="list-group-item"><a href="#"><i class="fas fa-bookmark"></i> Saved Posts</a></li>
             <li class="list-group-item"><a href="#"><i class="far fa-compass"></i> Explore</a></li>
             <li class="list-group-item"><a href="#"><i class="fas fa-users"></i> My Friends</a></li>
-            <li class="list-group-item"><a href="#"><i class="fas fa-user-plus"></i> Friends
-                Requests</a> <span id='req'> 2</span></li>
+            <li class="list-group-item">
+              <a href="#"><i class="fas fa-user-plus"></i> Friends Requests</a> 
+              <span id='req'> 2</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -94,13 +96,10 @@
   <script src='./js/bootstrap.bundle.min.js'></script>
   <script src='./js/navbar.js'></script>
   <script src='./js/uploadPost.js'></script>
-  <script src='./js/posts.js'></script>
+  <script src='./js/posts.js' defer></script>
   <script src='./js/postsOperations.js'></script>
   <script src='./js/suggestedPeople&Pages.js'></script>
   <script src='./js/follow&add.js'></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
