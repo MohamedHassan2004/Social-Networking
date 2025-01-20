@@ -66,7 +66,9 @@
             "bio" : "🪄",
             "mobile" : "0123456789",
             "BOD" : "31 - 07 - 1980",
-            "gender" : "Male"
+            "gender" : "Male",
+            "friend" : 1,
+            "reqFriend" : 0
         },
         {
             "id": 2,
@@ -75,7 +77,9 @@
             "bio" : "Iron Man",
             "mobile" : "0123456789",
             "BOD" : "",
-            "gender" : "Male"
+            "gender" : "Male",
+            "friend" : 0,
+            "reqFriend" : 1
         },
         {
             "id": 3,
@@ -84,7 +88,9 @@
             "bio" : "CR7",
             "mobile" : "0123456789",
             "BOD" : "",
-            "gender" : "Male"
+            "gender" : "Male",
+            "friend" : 1,
+            "reqFriend" : 0
         },
         {
             "id": 4,
@@ -93,7 +99,29 @@
             "bio" : "✌️",
             "mobile" : "0123456789",
             "BOD" : "22 - 09 - 2004",
-            "gender" : "Male"
+            "gender" : "Male",
+            "friend" : 0,
+            "reqFriend" : 0
+        }
+    ],
+    "pages" : [
+        {
+            "id" : 1,
+            "name" : "Elon Musk",
+            "img" : "profilePics/p2.jpg",
+            "desc" : "CEO of SpaceX",
+            "category" : "Public Figure",
+            "likes" : 1000,
+            "follow" : 0
+        },
+        {
+            "id" : 2,
+            "name" : "Man United",
+            "img" : "profilePics/Manchester_United.png",
+            "desc" : "Football Club",
+            "category" : "Sports",
+            "likes" : 500,
+            "follow" : 0
         }
     ]
 
