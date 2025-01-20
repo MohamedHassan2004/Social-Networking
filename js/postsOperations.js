@@ -8,6 +8,19 @@ document.querySelector(".posts-container").addEventListener("click", function (e
             saveBtn.querySelector('i').classList.replace("far", "fa");
         } else {
             saveBtn.querySelector('i').classList.replace("fa", "far");
+
+            // remove saved post from saved posts page
+            if(window.location.href.includes('savedPosts.html')) {
+                saveBtn.closest('.post').remove();
+                if(document.querySelectorAll('.post').length === 0) {
+                    document.querySelector('.posts-container').innerHTML = `
+                        <center>
+                            <div class="alert alert-info mt-3">No saved posts available</div>
+                            <a class="btn btn-primary" href="explore.html"><i class="far fa-compass"></i> Explore</a>
+                        </center>
+                    `;
+                }
+            }
         }
     }
 

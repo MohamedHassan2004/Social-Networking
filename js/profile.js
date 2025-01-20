@@ -21,8 +21,9 @@ function findProfileById(profiles, id) {
 }
 
 function renderProfileInfo(profiles) {
-    let userBanner = document.querySelector('.UserBanner');
     const profile = findProfileById(profiles, getIdFromLink());
+    document.title = profile.username + "'s Profile";
+    let userBanner = document.querySelector('.UserBanner');
     let banner = `
                 <div class="avatar myProfileAvatar">
                     <img src="${profile.img??"profilePics/avatar.jpg"}" class="card-img-top" onclick="toggleEditForm('profile_image_form')" />
@@ -89,5 +90,6 @@ function loadOperationsOnProfile(profiles) {
         }
     }
 }
+
 
 loadProfileInfo();

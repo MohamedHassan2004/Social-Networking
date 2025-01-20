@@ -1,3 +1,4 @@
+const currentUserId = localStorage.getItem('id');
 let navbar = `
     <div class="container-fluid container">
       <a class="navbar-brand" href="HomePage.html"><i><b>Socialify</b></i></a>
@@ -10,37 +11,37 @@ let navbar = `
             <a class="nav-link" aria-current="page" href="HomePage.html"><i class="fa-solid fa-house"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Profile</a>
+            <a class="nav-link" href="profile.html?id=${currentUserId}"><i class="fa-solid fa-user"></i> Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-sliders"></i> Settings</a>
+            <a class="nav-link" href="editProfile.html"><i class="fa-solid fa-sliders"></i> Settings</a>
           </li>
           <!-- List items moved from aside bar for small screens -->
           <li class="nav-item d-lg-none">
+          <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i> Notifications <span id='notification'>3</span></a>
+          </li>
+          <li class="nav-item d-lg-none">
+          <a class="nav-link" href="savedPosts.html"><i class="fas fa-bookmark"></i> Saved Posts</a>
+          </li>
+          <li class="nav-item d-lg-none">
+          <a class="nav-link" href="#"><i class="far fa-compass"></i> Explore</a>
+          </li>
+          <li class="nav-item d-lg-none">
+          <a class="nav-link" href="myFriends.html"><i class="fas fa-users"></i> My Friends</a>
+          </li>
+          <li class="nav-ite  m d-lg-none">
+          <a class="nav-link  " href="#"><i class="fas fa-user-plus"></i> Friends Requests <span id='req'>2</span></a>
+          </li>
+          <li class="nav-item d-lg-none">
             <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
           </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i> Notifications <span id='notification'>3</span></a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link" href="#"><i class="fas fa-bookmark"></i> Saved Posts</a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link" href="#"><i class="far fa-compass"></i> Explore</a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link" href="#"><i class="fas fa-users"></i> My Friends</a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link" href="#"><i class="fas fa-user-plus"></i> Friends Requests <span id='req'>2</span></a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
+          </ul>
+          <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-      </div>
-    </div>`;
+        </div>
+        </div>`;
 
 
 let nav = document.querySelector('nav');

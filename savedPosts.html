@@ -8,45 +8,23 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./style/HomePage.css" />
     <link rel="stylesheet" href="./style/Profile.css" />
-    <title>Profile</title>
+    <title>Saved Posts</title>
 </head>
 
 <body>
     <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
     <nav></nav>
     <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
-        <main>
-            <div class="userInfo container">
-                <div class="UserBanner">
-                
-                </div>
-                
-            </div>
-            
-            <!-- posts -->
-            <div class="posts-container">
-            </div>
-            
-        </main>
+    <main>
+        <!-- posts -->
+        <div class="posts-container">
+        </div>
+    </main>
 
-
-    <script>
-        function toggleEditForm(formId) {
-            var form = document.getElementById(formId);
-            if (form.style.display === "none") {
-                form.style.display = "flex";
-            } else {
-                form.style.display = "none";
-            }
-        }
-    </script>
     <script src='./js/navbar.js'></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src='./js/profile.js'></script>
-    <script src='./js/friendsAndRequest.js'></script>
     <script src='./js/posts.js'></script>
     <script src='./js/postsOperations.js'></script>
-        
+    <script src='./js/friends&request.js'></script>
 </body>
-
 </html>

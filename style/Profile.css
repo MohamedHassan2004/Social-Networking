@@ -45,5 +45,27 @@ body {
   main{
     width: 100%;
     padding:0.5rem;
+    margin-top:5rem;
   }
+  .userInfo{
+    padding: 2rem;
+  }
+  .btn{
+    padding:0.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .userInfo{
+    padding: 1.5rem;
+  }
+  .add-friend-btn ,.delete-friend{
+    font-size:0;
+    padding : 1rem;
+  }
+  .add-friend-btn i,.delete-friend i{
+    font-size: 1rem;
+    pointer-events: none;
+  }
+
 }

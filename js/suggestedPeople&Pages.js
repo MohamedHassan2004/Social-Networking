@@ -31,7 +31,8 @@ function showSuggestedPages(pages){
 // suggests people
 function showSuggestedPeople(profiles){
     let peopleContainer = document.querySelector('.people-container');
-    profiles.filter(p=> p.friend == 0).slice(0,3).forEach(p =>{
+    const currentUserId = localStorage.getItem('id');
+    profiles.filter(p=> p.friend == 0 && p.id != currentUserId && p.reqFriend == 0 ).slice(0,3).forEach(p =>{
         person = `
             <div class="person" data-profile-id='${p.id}'>
                 <img src="${p.img}" alt="Person" class="person-img">

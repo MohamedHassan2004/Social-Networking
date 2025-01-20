@@ -21,6 +21,9 @@ nav {
   background-color: #fff;
   z-index: 1000;
 }
+i{
+  pointer-events: none;
+}
 
 /* ----------------------------- Main Content Styles ----------------------------- */
 main {
@@ -242,4 +245,5 @@ main {
     font-size: 11px;
     padding: 0.5rem;
   }
+
 }

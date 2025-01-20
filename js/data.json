@@ -4,15 +4,14 @@
             "id": 1,
             "profileId": 1,
             "username": "Harry Potter",
-            "profilePicPath": "profilePics/page2.jpg",
+            "profilePicPath": "profilePics/HarryPotter.jpg",
             "time": "2 hours ago",
             "content": "❤️🪄",
-            "media": "uploads/xu4g5hyyvlhzoorzjpq5.webp",
+            "media": "uploads/HarryPotter.jpg",
             "likesCount": 5,
             "commentCount": 3,
-            "liked": 0,
-            "saved": 0,
-            "canModify": 1
+            "liked": 1,
+            "saved": 0
         },
         {
             "id": 2,
@@ -21,12 +20,11 @@
             "profilePicPath": "profilePics/Tony-Stark.jpg",
             "time": "5 hours ago",
             "content": "I am Iron Man!",
-            "media": "uploads/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg",
+            "media": "uploads/IronmanMovie.jpg",
             "likesCount": 4,
             "commentCount": 0,
             "liked": 0,
-            "saved": 0,
-            "canModify": 1
+            "saved": 0
         },
         {
             "id": 3,
@@ -35,12 +33,11 @@
             "profilePicPath": "profilePics/cr7.jpg",
             "time": "1 day ago",
             "content": "",
-            "media": "uploads/alasan-mengapa-cristiano-ronaldo-dicoret-dari-timnas-portugal-analisis-mendalam.webp",
+            "media": "uploads/RonaldoPortogal.jpg",
             "likesCount": 10,
             "commentCount": 5,
             "liked": 1,
-            "saved": 1,
-            "canModify":0
+            "saved": 1
         },
         {
             "id": 4,
@@ -53,62 +50,103 @@
             "likesCount": 5,
             "commentCount": 0,
             "liked": 0,
-            "saved": 0,
-            "canModify":0
+            "saved": 1
+        },
+        {
+            "id": 5,
+            "profileId": 3,
+            "username": "Ronaldo",
+            "profilePicPath": "profilePics/cr7.jpg",
+            "time": "2 hours ago",
+            "content": "",
+            "media": "uploads/RonaldoManU.jpg",
+            "likesCount": 9,
+            "commentCount": 7,
+            "liked": 1,
+            "saved": 0
+        },
+        {
+            "id": 6,
+            "profileId": 1,
+            "username": "Harry Potter",
+            "profilePicPath": "profilePics/HarryPotter.jpg",
+            "time": "19 hours ago",
+            "content": "Magic is Might",
+            "media": "uploads/harry.jpg",
+            "likesCount": 6,
+            "commentCount": 2,
+            "liked": 0,
+            "saved": 0
         }
     ],
 
-    "profiles" :[
-        {
-            "id": 1,
-            "username": "Harry Potter",
-            "img": "profilePics/page2.jpg",
-            "bio" : "🪄",
-            "mobile" : "0123456789",
-            "BOD" : "31 - 07 - 1980",
-            "gender" : "Male",
-            "friend" : 1,
-            "reqFriend" : 0
-        },
-        {
-            "id": 2,
-            "username": "Tony Stark",
-            "img": "profilePics/Tony-Stark.jpg",
-            "bio" : "Iron Man",
-            "mobile" : "0123456789",
-            "BOD" : "",
-            "gender" : "Male",
-            "friend" : 0,
-            "reqFriend" : 1
-        },
-        {
-            "id": 3,
-            "username": "Ronaldo",
-            "img": "profilePics/cr7.jpg",
-            "bio" : "CR7",
-            "mobile" : "0123456789",
-            "BOD" : "",
-            "gender" : "Male",
-            "friend" : 1,
-            "reqFriend" : 0
-        },
-        {
-            "id": 4,
-            "username": "Mohamed Hassan",
-            "img": "profilePics/avatar.jpg",
-            "bio" : "✌️",
-            "mobile" : "0123456789",
-            "BOD" : "22 - 09 - 2004",
-            "gender" : "Male",
-            "friend" : 0,
-            "reqFriend" : 0
-        }
+    "profiles": [
+    {
+        "id": 1,
+        "username": "Harry Potter",
+        "email": "harry@gmail.com",
+        "img": "profilePics/HarryPotter.jpg",
+        "bio": "🪄",
+        "mobile": "0123456789",
+        "BOD": "1980-07-31",
+        "gender": "Male",
+        "friend": 0,
+        "reqFriend": 0
+    },
+    {
+        "id": 2,
+        "username": "Tony Stark",
+        "email": "stark@gmail.com",
+        "img": "profilePics/Tony-Stark.jpg",
+        "bio": "Iron Man",
+        "mobile": "0123456789",
+        "BOD": null,
+        "gender": "Male",
+        "friend": 0,
+        "reqFriend": 1
+    },
+    {
+        "id": 3,
+        "username": "Ronaldo",
+        "email": "ronaldo@gmail.com",
+        "img": "profilePics/cr7.jpg",
+        "bio": "CR7",
+        "mobile": "0123456789",
+        "BOD": null,
+        "gender": "Male",
+        "friend": 1,
+        "reqFriend": 0
+    },
+    {
+        "id": 4,
+        "username": "Mohamed Hassan",
+        "email": "mo@gmail.com",
+        "img": "profilePics/avatar.jpg",
+        "bio": "✌️",
+        "mobile": "0123456789",
+        "BOD": "2004-09-22",
+        "gender": "Male",
+        "friend": 0,
+        "reqFriend": 0
+    },
+    {
+        "id": 5,
+        "username": "Leo Messi",
+        "email": "messi@gmail.com",
+        "img": "profilePics/messi.jpg",
+        "bio": "⚽🏆",
+        "mobile": "0123456789",
+        "BOD": "1986-06-28",
+        "gender": null,
+        "friend": 0,
+        "reqFriend": 0
+    }
     ],
     "pages" : [
         {
             "id" : 1,
             "name" : "Elon Musk",
-            "img" : "profilePics/p2.jpg",
+            "img" : "profilePics/ElonMusk.jpg",
             "desc" : "CEO of SpaceX",
             "category" : "Public Figure",
             "likes" : 1000,
