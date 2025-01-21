@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./style/login.css" />
+    <title>Socialify | Register</title>
+  </head>
+
+  <body>
+    <div class="register-card">
+      <div class="brand-header">
+        <h1>Socialify</h1>
+      </div>
+      <form method="post" action="" class="registration-form">
+        <div class="title"><h2>Register</h2></div>
+
+        <div class="mb-2">
+          <label for="inputName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="inputName" name="userName" required>
+        </div>
+
+        <div class="mb-2">
+          <label for="inputEmail" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="inputEmail" name="email" required>
+        </div>
+
+        <div class="mb-2">
+          <label for="inputPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword" name="password" required>
+        </div>
+
+        <div class="row g-3 mb-2">
+          <div class="col-md-6">
+            <label for="inputMobile" class="form-label">Mobile Number</label>
+            <input type="tel" class="form-control" id="inputMobile" name="mobile" pattern="[0-9]{11}" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputBirthdate" class="form-label">Birthdate</label>
+            <input type="date" class="form-control" id="inputBirthdate" name="birthDate" required>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label">Gender</label>
+          <div class="gender-options">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="male" checked>
+              <label class="form-check-label" for="gridRadios1">Male</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="female">
+              <label class="form-check-label" for="gridRadios2">Female</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create Account</button>
+        
+        <div class="login-link">
+          Already have an account? <a href="login.html">Sign in here</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/module.js" type='module'></script>
+  </body>
+</html>
