@@ -62,15 +62,30 @@ userInfoContainer.addEventListener("click", (e) => {
 if(window.location.pathname.includes("myFriends.html")){
     let friendsContainer = document.querySelector('#myfriends-container');
     friendsContainer.addEventListener("click", (e) => {
-        console.log(e.target);
         if(e.target.className.includes("add-friend-btn")){
             onclickAddFriend(e);
         }
         else if (e.target.className.includes('delete-friend')){
-            console.log('delete friend');
             onclickDeleteFriend(e, e.target.closest('.card-body'));
         }
     });
 }
 ///////////////////////////////////
 // friendsRequests page
+if(window.location.pathname.includes("friendsReq.html")){
+    let friendsContainer = document.querySelector('#friendsReq-container');
+    friendsContainer.addEventListener("click", (e) => {
+        if(e.target.className.includes("accept")){
+            onclickAcceptRequest(e , e.target.closest('.card-body'));
+        }
+        else if (e.target.className.includes('reject')){
+            onclickRejectRequest(e , e.target.closest('.card-body'));
+        }
+        else if(e.target.className.includes("add-friend-btn")){
+            onclickAddFriend(e);
+        }
+        else if (e.target.className.includes('delete-friend')){
+            onclickDeleteFriend(e, e.target.closest('.card-body'));
+        }
+    });
+}

@@ -91,7 +91,7 @@
         "BOD": "1980-07-31",
         "gender": "Male",
         "friend": 0,
-        "reqFriend": 0
+        "req": 0
     },
     {
         "id": 2,
@@ -103,7 +103,7 @@
         "BOD": null,
         "gender": "Male",
         "friend": 0,
-        "reqFriend": 1
+        "req": 1
     },
     {
         "id": 3,
@@ -115,7 +115,7 @@
         "BOD": null,
         "gender": "Male",
         "friend": 1,
-        "reqFriend": 0
+        "req": 0
     },
     {
         "id": 4,
@@ -127,7 +127,7 @@
         "BOD": "2004-09-22",
         "gender": "Male",
         "friend": 0,
-        "reqFriend": 0
+        "req": 0
     },
     {
         "id": 5,
@@ -139,7 +139,7 @@
         "BOD": "1986-06-28",
         "gender": null,
         "friend": 0,
-        "reqFriend": 0
+        "req": 0
     }
     ],
     "pages" : [

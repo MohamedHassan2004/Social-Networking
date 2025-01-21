@@ -23,7 +23,7 @@ function renderPosts(posts) {
 
   // select required posts based on the page
   if(window.location.href.includes('HomePage.html')){
-    posts.forEach(p => {
+    posts.sort((a,b)=> b.id - a.id).forEach(p => {
       const postElement = createPostElement(p);
       postContainer.appendChild(postElement);
     });

@@ -29,13 +29,10 @@ function renderProfileInfo(profiles) {
                     <img src="${profile.img??"profilePics/avatar.jpg"}" class="card-img-top" onclick="toggleEditForm('profile_image_form')" />
                 </div>
                 <h2>${profile.username}</h2>
-                <h6>${profile.bio??""}</h6>
-                <h6>Mobile <i class="fa-solid fa-phone"></i> : ${profile.mobile??""}</h6>
-                <h6>Birthdate <i class="fa-solid fa-cake-candles"></i> : ${profile.BOD??""}</h6>
-                <h6>
-                    Gender <i class="fa-solid fa-venus-mars"></i> :
-                    ${profile.gender??""}
-                </h6>
+                ${profile.bio?`<h6>${profile.bio}</h6>`:``}
+                ${profile.mobile?`<h6>Mobile <i class="fa-solid fa-phone"></i> : ${profile.mobile}</h6>`:``}
+                ${profile.BOD?`<h6>Birthdate <i class="fa-solid fa-cake-candles"></i> : ${profile.BOD}</h6>`:``}
+                ${profile.gender?`<h6>Gender <i class="fa-solid fa-venus-mars"></i> :${profile.gender}</h6>`:``}
                 `;
     userBanner.innerHTML = banner;
 }
@@ -90,6 +87,5 @@ function loadOperationsOnProfile(profiles) {
         }
     }
 }
-
 
 loadProfileInfo();

@@ -18,7 +18,7 @@ let navbar = `
           </li>
           <!-- List items moved from aside bar for small screens -->
           <li class="nav-item d-lg-none">
-          <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i> Notifications <span id='notification'>3</span></a>
+          <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
           </li>
           <li class="nav-item d-lg-none">
           <a class="nav-link" href="savedPosts.html"><i class="fas fa-bookmark"></i> Saved Posts</a>
@@ -30,7 +30,7 @@ let navbar = `
           <a class="nav-link" href="myFriends.html"><i class="fas fa-users"></i> My Friends</a>
           </li>
           <li class="nav-ite  m d-lg-none">
-          <a class="nav-link  " href="#"><i class="fas fa-user-plus"></i> Friends Requests <span id='req'>2</span></a>
+          <a class="nav-link  " href="friendsReq.html"><i class="fas fa-user-plus"></i> Friends Requests</a>
           </li>
           <li class="nav-item d-lg-none">
             <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>

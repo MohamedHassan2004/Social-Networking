@@ -158,15 +158,8 @@ main {
 }
 
 /* ----------------------------- Notification Styles ----------------------------- */
-#notification {
-  background-color: red;
-  color: white;
-  padding: 2px 5px;
-  border-radius: 50%;
-  font-size: 12px;
-}
 
-#req {
+#req-count ,#notification{
   background-color: red;
   color: white;
   padding: 2px 5px;
@@ -240,6 +233,7 @@ main {
   }
   main{
     width: 100%;
+    padding: 0.35rem;
   }
   .edit-post, .delete-post{
     font-size: 11px;

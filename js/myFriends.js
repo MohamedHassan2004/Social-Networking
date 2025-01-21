@@ -1,4 +1,4 @@
-async function loadProfiles() {
+async function loadMyFriends() {
   try {
       const response = await fetch('js/data.json');
       const data = await response.json();
@@ -37,4 +37,4 @@ function showMyFriends(profiles) {
 }
 
 
-loadProfiles();
+loadMyFriends();
