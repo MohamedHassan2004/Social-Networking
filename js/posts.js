@@ -1,3 +1,5 @@
+import { getIdFromURL} from './module.js';
+
 async function loadPosts() {
   try {
     const response = await fetch('js/data.json');
@@ -28,10 +30,7 @@ function renderPosts(posts) {
       postContainer.appendChild(postElement);
     });
   }else if (window.location.href.includes('profile.html')){
-    const currentUrl = window.location.href;
-    const url = new URL(currentUrl);
-    const params = new URLSearchParams(url.search);
-    const id = Number(params.get('id'));
+    const id = getIdFromURL();
     let userPosts = posts.filter((post) => post.profileId === id);
     userPosts.forEach(p => {
       const postElement = createPostElement(p);
@@ -44,6 +43,9 @@ function renderPosts(posts) {
         postContainer.appendChild(postElement);
       }
     });
+  }else if(window.location.href.includes('comments.html')){
+    let post = posts.filter((post) => post.id == getIdFromURL());
+    postContainer.appendChild(createPostElement(post[0]));
   }
 }
 
@@ -83,7 +85,7 @@ function createPostElement(p) {
           ${p.liked ? `<i class="fa fa-thumbs-up"></i>` : `<i class="far fa-thumbs-up"></i>`}
           <a href='#' class="like-count">${p.likesCount}</a>
         </button>
-        <a href="#" class="btn btn-icon comment">
+        <a href="comments.html?id=${p.id}" class="btn btn-icon comment">
           <i class="far fa-comment"></i>
           <span>${p.commentCount}</span>
         </a>
@@ -130,4 +132,4 @@ function handleMediaElement(p) {
   }
 }
 
-  document.addEventListener('DOMContentLoaded', loadPosts);
+document.addEventListener('DOMContentLoaded', loadPosts);

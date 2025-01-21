@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./style/HomePage.css" />
+    <link rel="stylesheet" href="./style/comments.css" />
+    <title>Comments</title>
+  </head>
+
+  <body>
+    <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
+    <nav></nav>
+    <!-- ------------------------------------------------- Nav ------------------------------------------------- -->
+    <main>
+      <!-- post -->
+      <div class="posts-container"></div>
+
+      <!-- comments -->
+      <div class="comments"></div>
+
+      <!-- add comment -->
+      <div class="add-comment">
+        <form action="#" id="comment_form">
+          <div class="input-group mt-3">
+            <input type="text" class="form-control" id="comment_txt" placeholder="Write a comment" aria-label="Write a comment" aria-describedby="button-addon2"/>
+            <button type="submit" class="btn btn-primary" id="button-addon2"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/module.js" type='module'></script>
+    <script src="./js/comments.js" type='module'></script>
+    <script src="./js/commentsOperations.js" type='module'></script>
+    <script src="./js/posts.js" type="module"></script>
+    <script src="./js/postsOperations.js"></script>
+  </body>
+</html>

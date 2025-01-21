@@ -1,3 +1,4 @@
+import { getIdFromURL } from './module.js';
 async function loadProfileInfo() {
     try {
         const response = await fetch('js/data.json');
@@ -9,19 +10,13 @@ async function loadProfileInfo() {
     }
 }
 
-function getIdFromLink(){
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
-    return Number(id);
-}
-
 function findProfileById(profiles, id) {
     const profile = profiles.find((profile) => profile.id === id);
     return profile;
 }
 
 function renderProfileInfo(profiles) {
-    const profile = findProfileById(profiles, getIdFromLink());
+    const profile = findProfileById(profiles, getIdFromURL());
     document.title = profile.username + "'s Profile";
     let userBanner = document.querySelector('.UserBanner');
     let banner = `
@@ -41,7 +36,7 @@ function renderProfileInfo(profiles) {
 function loadOperationsOnProfile(profiles) {
     let userInfoContainer = document.querySelector('.userInfo');
     // if the profile is the current user
-    if(getIdFromLink() == localStorage.getItem('id')){
+    if(getIdFromURL() == localStorage.getItem('id')){
         userInfoContainer.innerHTML +=
                 `
                 <!-- Form to delete account -->
@@ -67,7 +62,7 @@ function loadOperationsOnProfile(profiles) {
                 </div>
                 `;
     }else{
-        const profile = findProfileById(profiles, getIdFromLink());
+        const profile = findProfileById(profiles, getIdFromURL());
         if (profile.friend == 1) {
             userInfoContainer.innerHTML += `
             <button class='btn btn-danger delete-friend'><i class='fas fa-user-minus'></i> Delete Friend</button>
