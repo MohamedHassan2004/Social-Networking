@@ -1,19 +1,13 @@
-async function loadSuggestedPeoplePages() {
-    try {
-        const response = await fetch('js/data.json');
-        const data = await response.json();
-        showSuggestedPages(data.pages);
-        showSuggestedPeople(data.profiles);
-    } catch (error) {
-        console.error('Error loading suggested people and pages INFO:', error);
-    }
-}
+import { loadDataFromJSONFile} from "./module.js"; 
+
+loadDataFromJSONFile(showSuggestedPages,"pages");
+loadDataFromJSONFile(showSuggestedPeople,"profiles");
 
 // suggests pages
 function showSuggestedPages(pages){
     let pagesContainer = document.querySelector('.pages-container');
     pages.filter(p => p.follow == 0).slice(0,3).forEach(p =>{
-        page = `
+        let page = `
             <div class="page" data-page-id='${p.id}'>
                 <img src="${p.img}" alt="Page" class="page-img">
                 <div class="page-info">
@@ -24,7 +18,7 @@ function showSuggestedPages(pages){
                     Follow
                 </button>
             </div>`;
-            pagesContainer.innerHTML += page;
+        pagesContainer.innerHTML += page;
     });
 }
 
@@ -33,7 +27,7 @@ function showSuggestedPeople(profiles){
     let peopleContainer = document.querySelector('.people-container');
     const currentUserId = localStorage.getItem('id');
     profiles.filter(p=> p.friend == 0 && p.id != currentUserId && p.req == 0 ).slice(0,3).forEach(p =>{
-        person = `
+        let person = `
             <div class="person" data-profile-id='${p.id}'>
                 <img src="${p.img}" alt="Person" class="person-img">
                 <div class="person-info">
@@ -47,4 +41,3 @@ function showSuggestedPeople(profiles){
     });
 }
 
-loadSuggestedPeoplePages();

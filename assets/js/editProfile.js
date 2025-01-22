@@ -1,16 +1,9 @@
-async function loadUserInfo() {
-  try {
-      const response = await fetch('js/data.json');
-      const data = await response.json();
-      showUserInfo(data.profiles);
-  } catch (error) {
-      console.error('Error loading suggested people and pages INFO:', error);
-  }
-}
+import { loadDataFromJSONFile, fetchDataFromLocalStorage} from "./module.js"; 
 
-function showUserInfo(profiles){
+loadDataFromJSONFile(showUserInfo, 'profiles');
 
-  const currentUserId = localStorage.getItem('id');
+function showUserInfo(profiles) {
+  const currentUserId = fetchDataFromLocalStorage().id;
   let user = profiles.find(p => p.id == currentUserId);
   let updateProfile = document.querySelector('#updateUserInfo');
 
@@ -53,5 +46,3 @@ function truncateInput(event) {
       input.value = input.value.slice(0, 11);
   }
 }
-
-loadUserInfo();

@@ -24,7 +24,7 @@ let navbar = `
           <a class="nav-link" href="savedPosts.html"><i class="fas fa-bookmark"></i> Saved Posts</a>
           </li>
           <li class="nav-item d-lg-none">
-          <a class="nav-link" href="#"><i class="far fa-compass"></i> Explore</a>
+          <a class="nav-link" href="explore.html"><i class="far fa-compass"></i> Explore</a>
           </li>
           <li class="nav-item d-lg-none">
           <a class="nav-link" href="myFriends.html"><i class="fas fa-users"></i> My Friends</a>
@@ -33,7 +33,7 @@ let navbar = `
           <a class="nav-link  " href="friendsReq.html"><i class="fas fa-user-plus"></i> Friends Requests</a>
           </li>
           <li class="nav-item d-lg-none">
-            <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+            <a class="nav-link" href=""><i class="fas fa-sign-out-alt"></i> Log out</a>
           </li>
           </ul>
           <form class="d-flex" role="search">

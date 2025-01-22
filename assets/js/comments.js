@@ -1,14 +1,6 @@
-import { getIdFromURL } from './module.js';
+import { getIdFromURL , loadDataFromJSONFile} from './module.js';
 
-async function loadComments() {
-  try {
-      const response = await fetch('js/data.json');
-      const data = await response.json();
-      showComments(data.comments);
-  } catch (error) {
-      console.error('Error loading post\'s comments INFO:', error);
-  }
-}
+loadDataFromJSONFile(showComments,'comments');
 
 function showComments(comments){
   const commentsContainer = document.querySelector('.comments');
@@ -37,6 +29,3 @@ function showComments(comments){
     commentsContainer.innerHTML += c;
   });
 }
-
-
-loadComments();

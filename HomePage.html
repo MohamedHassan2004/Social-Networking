@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel='stylesheet' href='./css/all.min.css' />
-  <link rel='stylesheet' href='./css/bootstrap.min.css' />
-  <link rel="stylesheet" href="./style/HomePage.css">
+  <link rel='stylesheet' href='./assets/Bootstrap/css/all.min.css' />
+  <link rel='stylesheet' href='./assets/Bootstrap/css/bootstrap.min.css' />
+  <link rel="stylesheet" href="./assets/style/HomePage.css">
   <title>Socialify | Home</title>
 </head>
 
@@ -29,12 +29,12 @@
 
         <div class="card text-center mt-4">
           <ul class="list-group list-group-flush card-list">
-            <li class="list-group-item"><a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
+            <li class="list-group-item"><a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
             <li class="list-group-item">
               <a href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
             </li>
             <li class="list-group-item"><a href="savedPosts.html"><i class="fas fa-bookmark"></i> Saved Posts</a></li>
-            <li class="list-group-item"><a href="#"><i class="far fa-compass"></i> Explore</a></li>
+            <li class="list-group-item"><a href="explore.html"><i class="far fa-compass"></i> Explore</a></li>
             <li class="list-group-item"><a href="myFriends.html"><i class="fas fa-users"></i> My Friends</a></li>
             <li class="list-group-item">
               <a href="friendsReq.html"><i class="fas fa-user-plus"></i> Friends Requests</a>
@@ -91,15 +91,16 @@
     </div>
   </div>
   <!-- ------------------------------------------------- JS ------------------------------------------------- -->
-  <script src='./js/bootstrap.bundle.min.js'></script>
-  <script src='./js/navbar.js'></script>
-  <script  src='./js/userBox.js'></script>
-  <script src='./js/uploadPost.js'></script>
-  <script src="./js/posts.js" type="module"></script>
-  <script src="./js/module.js" type="module"></script>
-  <script src='./js/postsOperations.js'></script>
-  <script src='./js/suggestedPeople&Pages.js'></script>
-  <script src='./js/follow&add.js'></script>
+  <script src='./assets/Bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src="./assets/js/module.js" type="module"></script>
+  <script src='./assets/js/navbar.js'></script>
+  <script src='./assets/js/userBox.js'></script>
+  <script src='./assets/js/uploadPost.js'></script>
+  <script src="./assets/js/suggestedPeople&Pages.js" type="module"></script>
+  <script src="./assets/js/posts.js" type="module"></script>
+  <script src='./assets/js/postsOperations.js'></script>
+  <script src='./assets/js/follow&add.js'></script>
+  <script src='./assets/js/logout.js'></script>
 </body>
 
 </html>

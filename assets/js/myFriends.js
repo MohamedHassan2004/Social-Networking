@@ -1,12 +1,6 @@
-async function loadMyFriends() {
-  try {
-      const response = await fetch('js/data.json');
-      const data = await response.json();
-      showMyFriends(data.profiles);
-  } catch (error) {
-      console.error('Error loading Profile INFO:', error);
-  }
-}
+import { loadDataFromJSONFile} from './module.js';
+
+loadDataFromJSONFile(showMyFriends,'profiles');
 
 function showMyFriends(profiles) {
   let friendsContainer = document.querySelector('#myfriends-container');
@@ -19,8 +13,9 @@ function showMyFriends(profiles) {
 
   friendsContainer.closest('main').querySelector('h2').innerHTML = `My Friends (${myFriendsLen})`;
 
+  console.log(myFriends)
   myFriends.forEach(profile => {
-    friend = `
+    let friend = `
         <div class="card mb-3">
           <div class="card-body d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
@@ -35,6 +30,3 @@ function showMyFriends(profiles) {
     friendsContainer.innerHTML += friend;
   });
 }
-
-
-loadMyFriends();

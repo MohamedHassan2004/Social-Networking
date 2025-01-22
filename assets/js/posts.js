@@ -1,14 +1,4 @@
-import { getIdFromURL} from './module.js';
-
-async function loadPosts() {
-  try {
-    const response = await fetch('js/data.json');
-    const data = await response.json();
-    renderPosts(data.posts);
-  } catch (error) {
-    console.error('Error loading posts:', error);
-  }
-}
+import { getIdFromURL ,loadDataFromJSONFile} from './module.js';
 
 function renderPosts(posts) {
   const postContainer = document.querySelector(".posts-container");
@@ -46,6 +36,12 @@ function renderPosts(posts) {
   }else if(window.location.href.includes('comments.html')){
     let post = posts.filter((post) => post.id == getIdFromURL());
     postContainer.appendChild(createPostElement(post[0]));
+  }
+  else if(window.location.href.includes('explore.html')){
+    posts.sort((a,b)=> b.id - a.id).forEach(p => {
+      const postElement = createPostElement(p);
+      postContainer.appendChild(postElement);
+    });
   }
 }
 
@@ -132,4 +128,4 @@ function handleMediaElement(p) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', loadPosts);
+document.addEventListener('DOMContentLoaded', loadDataFromJSONFile(renderPosts,'posts'));

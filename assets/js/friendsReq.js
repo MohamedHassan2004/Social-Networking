@@ -1,12 +1,6 @@
-async function loadFriendsReq() {
-  try {
-      const response = await fetch('js/data.json');
-      const data = await response.json();
-      showFriendsReq(data.profiles);
-  } catch (error) {
-      console.error('Error loading Profile INFO:', error);
-  }
-}
+import { loadDataFromJSONFile} from './module.js';
+
+loadDataFromJSONFile(showFriendsReq,'profiles');
 
 function showFriendsReq(profiles) {
   const friendsReq = profiles.filter(profile => profile.req);
@@ -15,7 +9,7 @@ function showFriendsReq(profiles) {
     friendsContainer.innerHTML = '<h3 class="text-center">No friends Requests</h3>';
   }else{
     friendsReq.forEach(profile => {
-      friend = `
+      let friend = `
           <div class="card mb-3">
             <div class="card-body d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center">
@@ -32,8 +26,4 @@ function showFriendsReq(profiles) {
       friendsContainer.innerHTML += friend;
     });
   }
-
 }
-
-
-loadFriendsReq();

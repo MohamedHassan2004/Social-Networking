@@ -1,14 +1,6 @@
-import { getIdFromURL } from './module.js';
-async function loadProfileInfo() {
-    try {
-        const response = await fetch('js/data.json');
-        const data = await response.json();
-        renderProfileInfo(data.profiles);
-        loadOperationsOnProfile(data.profiles);
-    } catch (error) {
-        console.error('Error loading Profile INFO:', error);
-    }
-}
+import { getIdFromURL , loadDataFromJSONFile} from './module.js';
+
+loadDataFromJSONFile(renderProfileInfo,'profiles');
 
 function findProfileById(profiles, id) {
     const profile = profiles.find((profile) => profile.id === id);
@@ -30,6 +22,7 @@ function renderProfileInfo(profiles) {
                 ${profile.gender?`<h6>Gender <i class="fa-solid fa-venus-mars"></i> :${profile.gender}</h6>`:``}
                 `;
     userBanner.innerHTML = banner;
+    loadOperationsOnProfile(profiles);
 }
 
 
@@ -68,7 +61,7 @@ function loadOperationsOnProfile(profiles) {
             <button class='btn btn-danger delete-friend'><i class='fas fa-user-minus'></i> Delete Friend</button>
             `;
         } else {
-            if (profile.friend == 0 && profile.reqFriend == 0) {
+            if (profile.friend == 0 && profile.req == 0) {
                 userInfoContainer.innerHTML += `
                 <button class='btn btn-primary add-friend-btn'><i class='fas fa-user-plus'></i> Add Friend</button>
                 `;
@@ -82,5 +75,3 @@ function loadOperationsOnProfile(profiles) {
         }
     }
 }
-
-loadProfileInfo();

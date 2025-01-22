@@ -12,3 +12,13 @@ export function fetchDataFromLocalStorage() {
     imgSrc: localStorage.getItem('imgSrc')
   };
 }
+
+export async function loadDataFromJSONFile(showData,category,path='assets/data/data.json') {
+  try {
+    const response = await fetch(path);
+    const data = await response.json();
+    showData(data[category]);
+  } catch (error) {
+    console.error('Error loading data:', error);
+  }
+}
