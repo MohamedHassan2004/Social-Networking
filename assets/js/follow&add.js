@@ -2,13 +2,10 @@ document.querySelector(".pages-container").addEventListener("click", function (e
   let t = e.target;
   if (t.classList.contains("follow-btn") || t.closest('.follow-btn')) {
     const followBtn = t.closest('.follow-btn');
-    console.log(followBtn);
     if (followBtn.textContent.trim() == "Follow") {
-      console.log("followBtn");
       followBtn.textContent = "Unfollow";
       followBtn.className = followBtn.className.replace("btn-primary", "btn-secondary");
     } else {
-      console.log("unfollow");
       followBtn.textContent = "Follow";
       followBtn.className = followBtn.className.replace("btn-secondary", "btn-primary");
     }

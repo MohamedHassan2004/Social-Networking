@@ -13,7 +13,6 @@ function showMyFriends(profiles) {
 
   friendsContainer.closest('main').querySelector('h2').innerHTML = `My Friends (${myFriendsLen})`;
 
-  console.log(myFriends)
   myFriends.forEach(profile => {
     let friend = `
         <div class="card mb-3">

@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #2c3e50;    /* Navy blue */
-  --secondary-color: #3498db;  /* Bright blue */
-  --accent-color: #7f8c8d;     /* Medium gray */
-  --dark-color: #2c3e50;       /* Navy blue */
-  --light-color: #ecf0f1;      /* Light gray/white */
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #7f8c8d;
+  --dark-color: #2c3e50;
+  --light-color: #ecf0f1;
 }
 
 body {
@@ -116,17 +116,6 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 576px) {
-  .register-card, .login-card {
-    margin:auto;
-  }
-  
-  .brand-header h1 {
-    font-size: 2rem;
-  }
-}
-
-
 .title{
   font-size: 2.5rem;
   font-weight: 700;
@@ -135,3 +124,29 @@ body {
   margin-bottom: 1.5rem;
   color:var(--dark-color)
 }
+
+@media (max-width: 576px) {
+  .register-card, .login-card {
+    margin: 2rem auto;
+  }
+  .brand-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 512px){
+  *{
+    font-size : 1rem;
+  }
+  .title{
+    margin-bottom :1rem;
+  }
+  .login-card , .register-card{
+    width: 95%;
+  }
+  .registration-form, .login-form {
+    padding: 2rem 1rem;
+  }
+  
+}
+

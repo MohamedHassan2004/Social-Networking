@@ -170,7 +170,7 @@
             "username": "Tony Stark",
             "profilePicPath": "assets/data/profilePics/Tony-Stark.jpg",
             "time": "2 hours ago",
-            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            "content": "❤️"
         },
         {
             "id": 2,
@@ -179,7 +179,7 @@
             "username": "Ronaldo",
             "profilePicPath": "assets/data/profilePics/cr7.jpg",
             "time": "1 hour ago",
-            "content": "👍"
+            "content": "magico"
         },
         {
             "id": 3,
@@ -187,7 +187,7 @@
             "profileId": 4,
             "username": "Mohamed Hassan",
             "profilePicPath": "assets/data/profilePics/avatar.jpg",
-            "time": "1 hour ago",
+            "time": "32 min ago",
             "content": "👏"
         },
         {
@@ -224,7 +224,7 @@
             "username": "Harry Potter",
             "profilePicPath": "assets/data/profilePics/HarryPotter.jpg",
             "time": "1 day ago",
-            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            "content": "magico"
         },
         {
             "id": 8,
